@@ -1,0 +1,14 @@
+#+REVEAL_THEME: moon
+#+OPTIONS: toc:1, num:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+
+
+* What is Functional Programming?
+** Programming With Functions (Higher Order Functions)
+** Immutability
+** Referential Transparency
+** Category Theory
+
+* Examples
+
+* Conclusion
