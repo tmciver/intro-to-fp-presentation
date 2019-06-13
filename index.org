@@ -7,8 +7,20 @@
 ** Programming With Functions (Higher Order Functions)
 ** Immutability
 ** Referential Transparency
+** No Side Effects
+*** Always safe to evaluate independent expressions in parallel
 ** Category Theory
 
+* Notes
+** [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
+
 * Examples
+
+* Uses in Industry
+** Facebooks Spam Filters Written in Haskell
+** WhatsApp Written in Erlang
+** Some of Twitter (what parts?) Written in Scala
+** Jane Street uses OCaml
+** Github uses Haskell for "semantic" application
 
 * Conclusion
