@@ -4,7 +4,25 @@
 
 
 * What is Functional Programming?
-** Programming With Functions (Higher Order Functions)
+** Functions as First-class Citizens
+(Higher Order Functions)
+#+ATTR_REVEAL: :frag (appear)
+- Functions returning functions
+- Functions as function arguments
+
+** Example: `map`
+#+HEADER: :exports both
+#+BEGIN_SRC python :results pp
+# Python
+def to_upper_case(s):
+  return str(s).upper()
+
+return map(to_upper_case, 'abc')
+#+END_SRC
+
+#+RESULTS:
+| A | B | C |
+
 ** Immutability
 ** Referential Transparency
 ** No Side Effects
