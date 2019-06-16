@@ -61,6 +61,7 @@ Purely functional programming may also be defined by forbidding changing-state a
 
 * What is it Good For?
 ** [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
+** Property-based testing
 ** Computer-assisted optimizations
 ** Computer-assisted parallelization
 
