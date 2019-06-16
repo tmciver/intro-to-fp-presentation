@@ -26,32 +26,44 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-06-13 Thu 22:03</p>
+<section id="sec-title-slide"><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-06-16 Sun 11:55</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-org20d21ac">What is Functional Programming?</a></li>
-<li><a href="#/slide-org5410eac">Notes</a></li>
-<li><a href="#/slide-org95b7674">Examples</a></li>
-<li><a href="#/slide-orgdfc5f16">Uses in Industry</a></li>
-<li><a href="#/slide-org14d82d3">Conclusion</a></li>
+<li><a href="#/slide-org98d27b1">What is Functional Programming?</a></li>
+<li><a href="#/slide-org729964b">Notes</a></li>
+<li><a href="#/slide-orgea0b72c">Examples</a></li>
+<li><a href="#/slide-org641fcaf">Uses in Industry</a></li>
+<li><a href="#/slide-org35936a7">Conclusion</a></li>
 </ul>
 </div>
 </div>
 </section>
 
-
 <section>
 <section id="slide-sec-">
-<h2 id="org20d21ac">What is Functional Programming?</h2>
-<div class="outline-text-2" id="text-org20d21ac">
+<h2 id="org98d27b1">What is Functional Programming?</h2>
+<div class="outline-text-2" id="text-org98d27b1">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="orgd9809b1">Functions as First-class Citizens</h3>
+<h3 id="org95395b3"></h3>
+<p>
+Wikipedia says:
+</p>
+<blockquote nil>
+<p alt="Wikipedia Logo" title="Wikipedia Logo">
+<img src="./img/220px-Wikipedia-logo-v2.svg.png" alt="Wikipedia Logo" title="Wikipedia Logo" />
+"functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
+</p>
+</blockquote>
+
+</section>
+<section id="slide-sec-">
+<h3 id="orge7a3206">Functions as First-class Citizens</h3>
 <p>
 (Higher Order Functions)
 </p>
@@ -63,7 +75,7 @@
 
 </section>
 <section id="slide-sec-">
-<h3 id="org58ad486">Example: `map`</h3>
+<h3 id="orgd108c6f">Example: `map`</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">Python</span>
@@ -80,67 +92,70 @@
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgbd8b2b7">Immutability</h3>
+<h3 id="orgcd54455">Immutability</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="orgf3616cb">Referential Transparency</h3>
+<h3 id="orgf216f90">Totality</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="org4ae8c05">No Side Effects</h3>
-<div class="outline-text-3" id="text-org4ae8c05">
+<h3 id="orgdaa8c04">Referential Transparency</h3>
+</section>
+<section id="slide-sec-">
+<h3 id="org4d10369">No Side Effects</h3>
+<div class="outline-text-3" id="text-org4d10369">
 </div>
 </section>
 <section id="slide-sec-">
-<h4 id="org5d5e0db">Always safe to evaluate independent expressions in parallel</h4>
+<h4 id="org0746b60">Always safe to evaluate independent expressions in parallel</h4>
 </section>
 <section id="slide-sec-">
-<h3 id="org6e04a17">Category Theory</h3>
+<h3 id="org43e2b9e">Category Theory</h3>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org5410eac">Notes</h2>
-<div class="outline-text-2" id="text-org5410eac">
+<h2 id="org729964b">Notes</h2>
+<div class="outline-text-2" id="text-org729964b">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org1255c7c"><a href="https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/">Hack-proof code</a>?</h3>
+<h3 id="orge78aa63"><a href="https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/">Hack-proof code</a>?</h3>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org95b7674">Examples</h2>
+<h2 id="orgea0b72c">Examples</h2>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgdfc5f16">Uses in Industry</h2>
-<div class="outline-text-2" id="text-orgdfc5f16">
+<h2 id="org641fcaf">Uses in Industry</h2>
+<div class="outline-text-2" id="text-org641fcaf">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org1507479">Facebooks Spam Filters Written in Haskell</h3>
+<h3 id="org9108d43">Facebooks Spam Filters Written in Haskell</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="orgc4ea0fb">WhatsApp Written in Erlang</h3>
+<h3 id="org82369d9">WhatsApp Written in Erlang</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="orgb47d6bb">Some of Twitter (what parts?) Written in Scala</h3>
+<h3 id="org1dcf1d5">Some of Twitter (what parts?) Written in Scala</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="orgc6de500">Jane Street uses OCaml</h3>
+<h3 id="org7812aa9">Jane Street uses OCaml</h3>
 </section>
 <section id="slide-sec-">
-<h3 id="org4015893">Github uses Haskell for "semantic" application</h3>
+<h3 id="orgb6acf6b">Github uses Haskell for "semantic" application</h3>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org14d82d3">Conclusion</h2>
+<h2 id="org35936a7">Conclusion</h2>
 </section>
 </section>
 </div>

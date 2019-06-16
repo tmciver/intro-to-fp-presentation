@@ -2,8 +2,16 @@
 #+OPTIONS: toc:1, num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
 
-
 * What is Functional Programming?
+
+** 
+Wikipedia says:
+#+BEGIN_QUOTE
+#+ATTR_HTML: :alt Wikipedia Logo :title Wikipedia Logo
+[[file:./img/220px-Wikipedia-logo-v2.svg.png]]
+"functional programming is a programming paradigm that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
+#+END_QUOTE
+
 ** Functions as First-class Citizens
 (Higher Order Functions)
 #+ATTR_REVEAL: :frag (appear)
@@ -24,6 +32,7 @@ return map(to_upper_case, 'abc')
 | A | B | C |
 
 ** Immutability
+** Totality
 ** Referential Transparency
 ** No Side Effects
 *** Always safe to evaluate independent expressions in parallel
