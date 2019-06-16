@@ -4,6 +4,35 @@
 
 * What is Functional Programming?
 
+** It is:
+- an example of the declarative paradigm - meaning that it is based on the use of expressions or declarations
+- usually contrasted with the imperative paradigm (the use of statements to change program state)
+
+** Example (Imperative)
+#+HEADER: :exports both
+#+BEGIN_SRC python :results pp
+# Python
+chars = ['a', 'b', 'c']
+upper_chars = []
+for c in chars:
+  upper_chars.append(c.upper())
+
+return upper_chars
+#+END_SRC
+#+RESULTS:
+
+** Example (functional)
+#+HEADER: :exports both
+#+BEGIN_SRC python :results pp
+# Python
+chars = ['a', 'b', 'c']
+upper_chars = [c.upper() for c in chars]
+
+return upper_chars
+#+END_SRC
+
+#+RESULTS:
+
 ** 
 Wikipedia says:
 #+BEGIN_QUOTE
@@ -21,19 +50,6 @@ Purely functional programming may also be defined by forbidding changing-state a
 #+ATTR_REVEAL: :frag (appear)
 - Functions returning functions
 - Functions as function arguments
-
-** Example: `map`
-#+HEADER: :exports both
-#+BEGIN_SRC python :results pp
-# Python
-def to_upper_case(s):
-  return str(s).upper()
-
-return map(to_upper_case, 'abc')
-#+END_SRC
-
-#+RESULTS:
-| A | B | C |
 
 ** Immutability
 ** Totality
