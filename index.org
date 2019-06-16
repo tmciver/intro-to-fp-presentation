@@ -1,6 +1,7 @@
-#+REVEAL_THEME: league
+#+TITLE: An Introduction to Functional Programming
 #+OPTIONS: toc:1, num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
+#+REVEAL_THEME: beige
 
 * What is Functional Programming?
 
