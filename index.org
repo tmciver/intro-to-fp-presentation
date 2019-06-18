@@ -1,15 +1,16 @@
 #+TITLE: An Introduction to Functional Programming
 #+OPTIONS: toc:1, num:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js@3.8.0
-#+REVEAL_THEME: beige
+#+REVEAL_THEME: moon
 
 * What is Functional Programming?
 
-** It is:
-- an example of the declarative paradigm - meaning that it is based on the use of expressions or declarations
-- usually contrasted with the imperative paradigm (the use of statements to change program state)
+** It is: an example of the declarative paradigm
+#+ATTR_REVEAL: :frag (appear)
+- i.e., it is based on the use of expressions or declarations
+- contrasts with the imperative paradigm (the use of statements to change program state)
 
-** Example (Imperative)
+** Example: imperative
 #+HEADER: :exports both
 #+BEGIN_SRC python :results pp
 # Python
@@ -22,7 +23,7 @@ return upper_chars
 #+END_SRC
 #+RESULTS:
 
-** Example (functional)
+** Example: functional
 #+HEADER: :exports both
 #+BEGIN_SRC python :results pp
 # Python
@@ -33,6 +34,25 @@ return upper_chars
 #+END_SRC
 
 #+RESULTS:
+
+** Example: expressions vs. statements
+In imperative languages, ~if~ / ~else~ is a statement:
+#+begin_src java
+// Java
+String msg = "";
+if (isMoving) {
+  msg = "We're moving!";
+} else {
+  msg = "We're stopped.";
+}
+#+end_src
+In functional languages, it's an expression.
+#+begin_src scala
+// Scala
+val msg: String = if (isMoving)
+                    "We're moving!"
+                  else "We're stopped."
+#+end_src
 
 ** 
 Wikipedia says:
