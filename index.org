@@ -5,6 +5,13 @@
 
 * What is Functional Programming?
 
+** 
+#+begin_quote
+"functional programming can be viewed as a /style/ of programming in which the basic method of computation is the application of functions to arguments."
+
+-- Graham Hutton, author of "Programming in Haskell"
+#+end_quote
+
 ** It is: an example of the declarative paradigm
 #+ATTR_REVEAL: :frag (appear)
 - i.e., it is based on the use of expressions or declarations
