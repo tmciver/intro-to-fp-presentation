@@ -170,13 +170,15 @@ doIt = do
 #+end_src
 
 * What is it Good For?
+
+** It can give us:
 #+ATTR_REVEAL: :frag (appear)
 - [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
 - Property-based testing
 - Computer-assisted optimizations
 - Computer-assisted parallelization
 
-* What is it Good For?
+** 
 Whole classes of bugs become /impossible/.
 [[file:./img/dotnet-try-round-bug-scaled.png]]
 
