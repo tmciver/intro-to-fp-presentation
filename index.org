@@ -149,6 +149,10 @@ val msg: String = if (isMoving)
 - Computer-assisted optimizations
 - Computer-assisted parallelization
 
+* What is it Good For?
+Whole classes of bugs become /impossible/.
+[[file:./img/dotnet-try-round-bug-scaled.png]]
+
 * Examples
 
 * Uses in Industry
