@@ -140,7 +140,34 @@ val msg: String = if (isMoving)
                   else "We're stopped."
 #+end_src
 
-- See "A Type of Programming" quotes on Twitter.
+** Example: Factoring
+#+begin_src python
+// Python
+in1 = read("some-file.txt")
+write("some-file.txt", in1 + "new stuff.")
+in2 = read("some-file.txt")
+#+end_src
+
+#+ATTR_REVEAL: :frag (appear)
+#+begin_src haskell
+-- Haskell
+doIt = do
+  in1 <- readFile("some-file.txt")
+  writeFile("some-file.txt", in1 ++ "new stuff.")
+  in2 <- readFile("some-file.txt")
+  return in2
+#+end_src
+
+#+ATTR_REVEAL: :frag (appear)
+#+begin_src haskell
+-- Haskell
+readSomeFile = readFile("some-file.txt")
+doIt = do
+  in1 <- readSomeFile
+  writeFile("some-file.txt", in1 ++ "new stuff.")
+  in2 <- readSomeFile
+  return in2
+#+end_src
 
 * What is it Good For?
 #+ATTR_REVEAL: :frag (appear)
