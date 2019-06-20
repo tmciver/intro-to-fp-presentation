@@ -190,6 +190,21 @@ Whole classes of bugs become /impossible/.
 - [[https://www.janestreet.com/technology/][Jane Street uses OCaml]]
 - [[https://github.com/github/semantic/blob/master/docs/why-haskell.md][Github uses Haskell for "Semantic"]]
 
+** Why Github Uses Haskell for Semantic
+#+begin_quote
+"it's worth mentioning that Semantic, as a rule, does not encounter runtime crashes"
+#+end_quote
+
+** Why Github Uses Haskell for Semantic
+#+begin_quote
+"null pointer exceptions, missing-method exceptions, and invalid casts are entirely obviated, as Haskell makes it nigh-impossible to build programs that contain such bugs."
+#+end_quote
+
+** Why Github Uses Haskell for Semantic
+#+begin_quote
+"the fact that the Semantic Code team spends the majority of its time working on features rather than debugging production crashes is truly remarkable—and this can largely be attributed to our choice of language."
+#+end_quote
+
 * Start Using It Today!
 #+ATTR_REVEAL: :frag (appear)
 - Use higher-order functions instead of ~for~ loops
