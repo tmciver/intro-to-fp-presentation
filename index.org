@@ -30,8 +30,7 @@ Wikipedia says:
 Purely functional programming may also be defined by forbidding changing-state and mutable data.
 #+END_QUOTE
 
-** 
-First-class Functions
+** First-class Functions
 #+ATTR_REVEAL: :frag (appear)
 - Functional programming languages are often said to be those where functions are "first class".
 - This means that functions are values like any other and can therefore be passed as arguments to other functions or returned from functions.
