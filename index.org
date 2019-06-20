@@ -55,6 +55,20 @@ var helloGreeter = greeter("Hello")
 helloGreeter("FP fans!")
 #+end_src
 
+** Pure Functions
+#+ATTR_REVEAL: :frag (appear)
+- Give the same output for a given set of inputs
+- Have no side effects
+
+** Pure Functions
+These features give the following benefits
+#+ATTR_REVEAL: :frag (appear)
+- Referential Transparency: a function call can be replaced by its value.
+- Memoization potential
+- Independent expressions can be run in parallel, i.e., they are automatically thread safe.
+- The compiler is free to reorder or combine expressions.
+- Laws!
+
 ** It is: an example of the declarative paradigm
 #+ATTR_REVEAL: :frag (appear)
 - i.e., it is based on the use of expressions or declarations
