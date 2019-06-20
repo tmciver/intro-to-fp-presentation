@@ -180,8 +180,6 @@ doIt = do
 Whole classes of bugs become /impossible/.
 [[file:./img/dotnet-try-round-bug-scaled.png]]
 
-* Examples
-
 * Uses in Industry
 - Facebooks Spam Filters Written in Haskell
 - WhatsApp Written in Erlang
