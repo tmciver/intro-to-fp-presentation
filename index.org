@@ -184,11 +184,11 @@ Whole classes of bugs become /impossible/.
 
 * Uses in Industry
 #+ATTR_REVEAL: :frag (appear)
-- Facebooks Spam Filters Written in Haskell
-- WhatsApp Written in Erlang
-- Some of Twitter (what parts?) Written in Scala
-- Jane Street uses OCaml
-- Github uses Haskell for "Semantic" application
+- [[https://code.fb.com/security/fighting-spam-with-haskell/][Facebook's Spam Filters Written in Haskell]]
+- [[https://www.fpcomplete.com/articles/whatsapp-erlang-haskell][WhatsApp Written in Erlang]]
+- [[https://github.com/search?q=org:twitter&type=Repositories&utf8=%25E2%259C%2593][Some of Twitter Written in Scala]]
+- [[https://www.janestreet.com/technology/][Jane Street uses OCaml]]
+- [[https://github.com/github/semantic/blob/master/docs/why-haskell.md][Github uses Haskell for "Semantic"]]
 
 * Start Using It Today!
 #+ATTR_REVEAL: :frag (appear)
