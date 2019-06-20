@@ -54,6 +54,24 @@ var helloGreeter = greeter("Hello")
 helloGreeter("FP fans!")
 #+end_src
 
+** First-Class Functions Enable Higher-Order Functions
+#+begin_src php
+// PHP
+function map(callable $f, array $l) {
+  $result = [];
+  foreach ($l as $v) {
+    $result[] = $f($v);
+  }
+  return $result;
+}
+
+$inc = function($i) {
+  return $i + 1;
+};
+map($inc, [1, 2, 3]);
+// [2, 3, 4]
+#+end_src
+
 ** Pure Functions
 #+ATTR_REVEAL: :frag (appear)
 - Give the same output for a given set of inputs
@@ -66,7 +84,6 @@ These features give the following benefits
 - Memoization potential
 - Independent expressions can be run in parallel, i.e., they are automatically thread safe.
 - The compiler is free to reorder or combine expressions.
-- Laws!
 
 ** It is: an example of the declarative paradigm
 #+ATTR_REVEAL: :frag (appear)
