@@ -140,12 +140,6 @@ val msg: String = if (isMoving)
                   else "We're stopped."
 #+end_src
 
-** Functions as First-class Citizens
-(Higher Order Functions)
-#+ATTR_REVEAL: :frag (appear)
-- Functions returning functions
-- Functions as function arguments
-
 ** Immutability
 ** Totality
 ** Referential Transparency
