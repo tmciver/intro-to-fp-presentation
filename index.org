@@ -140,29 +140,22 @@ val msg: String = if (isMoving)
                   else "We're stopped."
 #+end_src
 
-** Immutability
-** Totality
-** Referential Transparency
-** No Side Effects
-*** Always safe to evaluate independent expressions in parallel
-*** Be sure to point out how many of the mathematical properties of FP are only true if there are no side effects.
-** Category Theory
-** Laziness
 - See "A Type of Programming" quotes on Twitter.
 
 * What is it Good For?
-** [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
-** Property-based testing
-** Computer-assisted optimizations
-** Computer-assisted parallelization
+#+ATTR_REVEAL: :frag (appear)
+- [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
+- Property-based testing
+- Computer-assisted optimizations
+- Computer-assisted parallelization
 
 * Examples
 
 * Uses in Industry
-** Facebooks Spam Filters Written in Haskell
-** WhatsApp Written in Erlang
-** Some of Twitter (what parts?) Written in Scala
-** Jane Street uses OCaml
-** Github uses Haskell for "semantic" application
+- Facebooks Spam Filters Written in Haskell
+- WhatsApp Written in Erlang
+- Some of Twitter (what parts?) Written in Scala
+- Jane Street uses OCaml
+- Github uses Haskell for "semantic" application
 
 * Conclusion

@@ -26,19 +26,19 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">An Introduction to Functional Programming</h1><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-06-19 Wed 23:54</p>
+<section id="sec-title-slide"><h1 class="title">An Introduction to Functional Programming</h1><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-06-20 Thu 07:04</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgd6ca6c9">What is Functional Programming?</a></li>
-<li><a href="#/slide-org3c179d0">Versus Imperative Programming</a></li>
-<li><a href="#/slide-org5173ec5">What is it Good For?</a></li>
-<li><a href="#/slide-orgc3e2b9d">Examples</a></li>
-<li><a href="#/slide-orgde26db9">Uses in Industry</a></li>
-<li><a href="#/slide-orgc42c6c7">Conclusion</a></li>
+<li><a href="#/slide-orgc8f58b9">What is Functional Programming?</a></li>
+<li><a href="#/slide-org771d759">Versus Imperative Programming</a></li>
+<li><a href="#/slide-org6bb0c35">What is it Good For?</a></li>
+<li><a href="#/slide-org067bbaa">Examples</a></li>
+<li><a href="#/slide-orgb9a7a09">Uses in Industry</a></li>
+<li><a href="#/slide-org2a13118">Conclusion</a></li>
 </ul>
 </div>
 </div>
@@ -46,19 +46,19 @@
 
 <section>
 <section id="slide-sec-">
-<h2 id="orgd6ca6c9">What is Functional Programming?</h2>
-<div class="outline-text-2" id="text-orgd6ca6c9">
+<h2 id="orgc8f58b9">What is Functional Programming?</h2>
+<div class="outline-text-2" id="text-orgc8f58b9">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org5794e92"></h3>
+<h3 id="org20b9c23"></h3>
 <p>
 It's a bit hard to define, but let's give it a go.
 </p>
 
 </section>
 <section id="slide-sec-">
-<h3 id="org98188ce"></h3>
+<h3 id="org5056b2f"></h3>
 <blockquote nil>
 <p>
 "functional programming can be viewed as a <i>style</i> of programming in which the basic method of computation is the application of functions to arguments."
@@ -75,7 +75,7 @@ There must be more to the story than that . . .
 
 </section>
 <section id="slide-sec-">
-<h3 id="org0db8fb7"></h3>
+<h3 id="org3cd32df"></h3>
 <blockquote nil>
 <p>
 "Functional programming is a programming paradigm [&#x2026;] that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
@@ -88,7 +88,7 @@ There must be more to the story than that . . .
 
 </section>
 <section id="slide-sec-">
-<h3 id="org0d64c7a">First-class Functions</h3>
+<h3 id="orgfb1081e">First-class Functions</h3>
 <ul>
 <li class="fragment appear">Functional programming languages are often said to be those where functions are "first class".</li>
 <li class="fragment appear">This means that functions are values like any other and can therefore be passed as arguments to other functions or returned from functions.</li>
@@ -97,7 +97,7 @@ There must be more to the story than that . . .
 
 </section>
 <section id="slide-sec-">
-<h3 id="org947ca5c">First-Class Function Examples: JavaScript</h3>
+<h3 id="org8d0974b">First-Class Function Examples: JavaScript</h3>
 <div class="org-src-container">
 
 <pre  class="src src-js"><code trim>setTimeout(<span style="color: #b4fa70;">function</span>() {
@@ -130,7 +130,7 @@ undefined
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgcdad647">First-Class Functions Enable Higher-Order Functions</h3>
+<h3 id="org5051a2f">First-Class Functions Enable Higher-Order Functions</h3>
 <div class="org-src-container">
 
 <pre  class="src src-php"><code trim><span style="color: #73d216;">// </span><span style="color: #73d216;">PHP</span>
@@ -152,7 +152,7 @@ map(<span style="color: #eeeeec; background-color: #2e3436;">$</span><span style
 
 </section>
 <section id="slide-sec-">
-<h3 id="org8b307ce">Pure Functions</h3>
+<h3 id="orgcfe5880">Pure Functions</h3>
 <ul>
 <li class="fragment appear">Give the same output for a given set of inputs</li>
 <li class="fragment appear">Have no side effects</li>
@@ -161,7 +161,7 @@ map(<span style="color: #eeeeec; background-color: #2e3436;">$</span><span style
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgeb4a85d">Pure Functions</h3>
+<h3 id="orgdaf99bd">Pure Functions</h3>
 <p>
 These features give the following benefits:
 </p>
@@ -175,7 +175,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org571771d">Using Pure Functions Leads to Purely Functional Programming</h3>
+<h3 id="org66b63db">Using Pure Functions Leads to Purely Functional Programming</h3>
 <blockquote nil>
 <p>
 "purely functional programming usually designates a programming paradigm [&#x2026;] that treats all computation as the evaluation of mathematical functions. Purely functional programming may also be defined by forbidding changing-state and mutable data."
@@ -190,12 +190,12 @@ These features give the following benefits:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org3c179d0">Versus Imperative Programming</h2>
-<div class="outline-text-2" id="text-org3c179d0">
+<h2 id="org771d759">Versus Imperative Programming</h2>
+<div class="outline-text-2" id="text-org771d759">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org90e89e4">Functional Programming Is An Example of the Declarative Paradigm</h3>
+<h3 id="orgb5d8480">Functional Programming Is An Example of the Declarative Paradigm</h3>
 <ul>
 <li class="fragment appear">It is based on the use of expressions or declarations</li>
 <li class="fragment appear">contrasts with the imperative paradigm (the use of statements to change program state)</li>
@@ -204,7 +204,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org6f19de2">Example: imperative</h3>
+<h3 id="org1e8879e">Example: imperative</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">Python</span>
@@ -222,7 +222,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org34755a3">Example: functional</h3>
+<h3 id="orgc17085a">Example: functional</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">Python</span>
@@ -239,7 +239,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org966e3ef">Example: expressions vs. statements</h3>
+<h3 id="org02c74f1">Example: expressions vs. statements</h3>
 <p>
 In imperative languages, <code>if</code> / <code>else</code> is a statement:
 </p>
@@ -266,32 +266,6 @@ In functional languages, it's an expression.
 </code></pre>
 </div>
 
-</section>
-<section id="slide-sec-">
-<h3 id="org18b94c2">Immutability</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org7a32797">Totality</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org2b18fee">Referential Transparency</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="orgf6f45bb">No Side Effects</h3>
-<div class="outline-text-3" id="text-orgf6f45bb">
-</div>
-</section>
-<section id="slide-sec-">
-<h4 id="org44720cf">Always safe to evaluate independent expressions in parallel</h4>
-</section>
-<section id="slide-sec-">
-<h4 id="org39b7054">Be sure to point out how many of the mathematical properties of FP are only true if there are no side effects.</h4>
-</section>
-<section id="slide-sec-">
-<h3 id="org66663ed">Category Theory</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org70455b3">Laziness</h3>
 <ul>
 <li>See "A Type of Programming" quotes on Twitter.</li>
 
@@ -301,56 +275,40 @@ In functional languages, it's an expression.
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org5173ec5">What is it Good For?</h2>
-<div class="outline-text-2" id="text-org5173ec5">
-</div>
-</section>
-<section id="slide-sec-">
-<h3 id="orge22054b"><a href="https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/">Hack-proof code</a>?</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org96d9d22">Property-based testing</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org7e07841">Computer-assisted optimizations</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org65a915f">Computer-assisted parallelization</h3>
+<h2 id="org6bb0c35">What is it Good For?</h2>
+<ul>
+<li class="fragment appear"><a href="https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/">Hack-proof code</a>?</li>
+<li class="fragment appear">Property-based testing</li>
+<li class="fragment appear">Computer-assisted optimizations</li>
+<li class="fragment appear">Computer-assisted parallelization</li>
+
+</ul>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgc3e2b9d">Examples</h2>
+<h2 id="org067bbaa">Examples</h2>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgde26db9">Uses in Industry</h2>
-<div class="outline-text-2" id="text-orgde26db9">
-</div>
-</section>
-<section id="slide-sec-">
-<h3 id="org289d64d">Facebooks Spam Filters Written in Haskell</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="orgc326b59">WhatsApp Written in Erlang</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="orge4587bb">Some of Twitter (what parts?) Written in Scala</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="orge7d4f26">Jane Street uses OCaml</h3>
-</section>
-<section id="slide-sec-">
-<h3 id="org928b351">Github uses Haskell for "semantic" application</h3>
+<h2 id="orgb9a7a09">Uses in Industry</h2>
+<ul>
+<li>Facebooks Spam Filters Written in Haskell</li>
+<li>WhatsApp Written in Erlang</li>
+<li>Some of Twitter (what parts?) Written in Scala</li>
+<li>Jane Street uses OCaml</li>
+<li>Github uses Haskell for "semantic" application</li>
+
+</ul>
 
 </section>
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgc42c6c7">Conclusion</h2>
+<h2 id="org2a13118">Conclusion</h2>
 </section>
 </section>
 </div>
