@@ -183,10 +183,16 @@ Whole classes of bugs become /impossible/.
 [[file:./img/dotnet-try-round-bug-scaled.png]]
 
 * Uses in Industry
+#+ATTR_REVEAL: :frag (appear)
 - Facebooks Spam Filters Written in Haskell
 - WhatsApp Written in Erlang
 - Some of Twitter (what parts?) Written in Scala
 - Jane Street uses OCaml
-- Github uses Haskell for "semantic" application
+- Github uses Haskell for "Semantic" application
+
+* Start Using It Today!
+#+ATTR_REVEAL: :frag (appear)
+- Use higher-order functions instead of ~for~ loops
+- Make data structures immutable
 
 * Conclusion
