@@ -6,6 +6,9 @@
 * What is Functional Programming?
 
 ** 
+- Based on the lambda calculus (by Alfonzo Church) which predates computers!
+
+** 
 It's a bit hard to define, but let's give it a go.
 
 ** 
@@ -25,6 +28,13 @@ There must be more to the story than that . . .
 "Functional programming is a programming paradigm [...] that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
 
 -- Wikipedia
+#+END_QUOTE
+
+** 
+#+BEGIN_QUOTE
+"Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
+
+-- Rúnar Bjarnason
 #+END_QUOTE
 
 ** First-class Functions
@@ -177,6 +187,9 @@ doIt = do
 - Property-based testing
 - Computer-assisted optimizations
 - Computer-assisted parallelization
+
+** Examples of Optimizations that GHC Can Do
+- Common Sub-Expression Elimination
 
 ** 
 Whole classes of bugs become /impossible/.
