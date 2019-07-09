@@ -41,6 +41,8 @@ There must be more to the story than that . . .
 #+REVEAL_HTML: <div class="column" style="float:right; width: 30%">
 #+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
 [[file:./img/runar-bjarnason-twitter.png]]
+#+ATTR_REVEAL: :frag (appear)
+[[./img/fp-in-scala-cover.jpg]]
 #+REVEAL_HTML: </div>
 
 ** First-class Functions
