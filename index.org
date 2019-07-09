@@ -31,11 +31,17 @@ There must be more to the story than that . . .
 #+END_QUOTE
 
 ** 
+#+REVEAL_HTML: <div class="column" style="float:left; width: 70%">
 #+BEGIN_QUOTE
 "Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
 
 -- Rúnar Bjarnason
 #+END_QUOTE
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 30%">
+#+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
+[[file:./img/runar-bjarnason-twitter.png]]
+#+REVEAL_HTML: </div>
 
 ** First-class Functions
 #+ATTR_REVEAL: :frag (appear)
