@@ -27,19 +27,19 @@
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">An Introduction to Functional Programming</h1><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-07-10 Wed 17:37</p>
+<section id="sec-title-slide"><h1 class="title">An Introduction to Functional Programming</h1><h2 class="author">Tim McIver</h2><p class="date">Created: 2019-07-10 Wed 19:09</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-org015a8f6">What is Functional Programming?</a></li>
-<li><a href="#/slide-org23432a1">Versus Imperative Programming</a></li>
-<li><a href="#/slide-orgf5c3fd1">What is it Good For?</a></li>
-<li><a href="#/slide-org39b6c95">Uses in Industry</a></li>
-<li><a href="#/slide-org4b4789c">Start Using It Today!</a></li>
-<li><a href="#/slide-org6ef67e2">Conclusion</a></li>
+<li><a href="#/slide-org1503f07">What is Functional Programming?</a></li>
+<li><a href="#/slide-orgb1546f5">Versus Imperative Programming</a></li>
+<li><a href="#/slide-orgf20f143">What is it Good For?</a></li>
+<li><a href="#/slide-orgf5d209f">Uses in Industry</a></li>
+<li><a href="#/slide-orgb7ed03c">Start Using It Today!</a></li>
+<li><a href="#/slide-org4a25313">Conclusion</a></li>
 </ul>
 </div>
 </div>
@@ -47,12 +47,12 @@
 
 <section>
 <section id="slide-sec-">
-<h2 id="org015a8f6">What is Functional Programming?</h2>
-<div class="outline-text-2" id="text-org015a8f6">
+<h2 id="org1503f07">What is Functional Programming?</h2>
+<div class="outline-text-2" id="text-org1503f07">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org8562ce8"></h3>
+<h3 id="org028274e"></h3>
 <ul>
 <li>Based on the lambda calculus (by Alfonzo Church) which predates computers!</li>
 
@@ -60,14 +60,14 @@
 
 </section>
 <section id="slide-sec-">
-<h3 id="org42e030c"></h3>
+<h3 id="org0478f87"></h3>
 <p>
 It's a bit hard to define, but let's give it a go.
 </p>
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgcd4d069"></h3>
+<h3 id="org86d2db8"></h3>
 <div class="column" style="float:left; width: 25%">
 <p>
 <img src="./img/hutton-twitter.jpg" alt="hutton-twitter.jpg" />
@@ -91,14 +91,14 @@ There must be more to the story than that . . .
 
 </section>
 <section id="slide-sec-">
-<h3 id="org0467153"></h3>
+<h3 id="org3727f6f"></h3>
 <p>
 Are we talking about <i>pure</i> or <i>impure</i> FP?
 </p>
 
 </section>
 <section id="slide-sec-">
-<h3 id="org0b35918">Impure FP</h3>
+<h3 id="orgef937b3">Impure FP</h3>
 <div class="column" style="float:left; width: 75%">
 <blockquote nil>
 <p>
@@ -121,28 +121,7 @@ Are we talking about <i>pure</i> or <i>impure</i> FP?
 
 </section>
 <section id="slide-sec-">
-<h3 id="orga24cb78">Pure FP</h3>
-<div class="column" style="float:left; width: 25%">
-<p alt="Runar Bjarnason's Twitter Photo" title="Runar Bjarnason's Twitter Photo">
-<img src="./img/runar-bjarnason-twitter.png" alt="Runar Bjarnason's Twitter Photo" title="Runar Bjarnason's Twitter Photo" />
-<img src="./img/fp-in-scala-cover.jpg" alt="fp-in-scala-cover.jpg" />
-</p>
-</div>
-<div class="column" style="float:right; width: 75%">
-<blockquote nil>
-<p>
-"Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
-</p>
-
-<p>
-&#x2013; Rúnar Bjarnason
-</p>
-</blockquote>
-</div>
-
-</section>
-<section id="slide-sec-">
-<h3 id="orgf9ef4d4">Pure FP</h3>
+<h3 id="org5dc1536">Pure FP</h3>
 <div class="column" style="float:left; width: 80%">
 <blockquote nil>
 <p>
@@ -165,7 +144,28 @@ Are we talking about <i>pure</i> or <i>impure</i> FP?
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgae73055">First-class Functions</h3>
+<h3 id="org75a41c6">Pure FP</h3>
+<div class="column" style="float:left; width: 25%">
+<p alt="Runar Bjarnason's Twitter Photo" title="Runar Bjarnason's Twitter Photo">
+<img src="./img/runar-bjarnason-twitter.png" alt="Runar Bjarnason's Twitter Photo" title="Runar Bjarnason's Twitter Photo" />
+<img src="./img/fp-in-scala-cover.jpg" alt="fp-in-scala-cover.jpg" />
+</p>
+</div>
+<div class="column" style="float:right; width: 75%">
+<blockquote nil>
+<p>
+"Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
+</p>
+
+<p>
+&#x2013; Rúnar Bjarnason
+</p>
+</blockquote>
+</div>
+
+</section>
+<section id="slide-sec-">
+<h3 id="org31dbe2f">First-class Functions</h3>
 <ul>
 <li class="fragment appear">Functional programming languages are often said to be those where functions are "first class".</li>
 <li class="fragment appear">This means that functions are values like any other and can therefore be passed as arguments to other functions or returned from functions.</li>
@@ -174,7 +174,7 @@ Are we talking about <i>pure</i> or <i>impure</i> FP?
 
 </section>
 <section id="slide-sec-">
-<h3 id="orge862c8f">First-Class Function Examples: JavaScript</h3>
+<h3 id="orgde4b06b">First-Class Function Examples: JavaScript</h3>
 <div class="org-src-container">
 
 <pre  class="src src-js"><code trim>setTimeout(<span style="color: #b4fa70;">function</span>() {
@@ -207,7 +207,7 @@ undefined
 
 </section>
 <section id="slide-sec-">
-<h3 id="org6beb695">First-Class Functions Enable Higher-Order Functions</h3>
+<h3 id="org328ebb1">First-Class Functions Enable Higher-Order Functions</h3>
 <div class="org-src-container">
 
 <pre  class="src src-php"><code trim><span style="color: #73d216;">// </span><span style="color: #73d216;">PHP</span>
@@ -229,7 +229,7 @@ map(<span style="color: #eeeeec; background-color: #2e3436;">$</span><span style
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgb55da13">Pure Functions</h3>
+<h3 id="orgd0ca568">Pure Functions</h3>
 <ul>
 <li class="fragment appear">Give the same output for a given set of inputs</li>
 <li class="fragment appear">Have no side effects</li>
@@ -238,7 +238,7 @@ map(<span style="color: #eeeeec; background-color: #2e3436;">$</span><span style
 
 </section>
 <section id="slide-sec-">
-<h3 id="orga32bb6c">Pure Functions</h3>
+<h3 id="orgbab343e">Pure Functions</h3>
 <p>
 These features give the following benefits:
 </p>
@@ -254,12 +254,12 @@ These features give the following benefits:
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org23432a1">Versus Imperative Programming</h2>
-<div class="outline-text-2" id="text-org23432a1">
+<h2 id="orgb1546f5">Versus Imperative Programming</h2>
+<div class="outline-text-2" id="text-orgb1546f5">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org32c306d">Functional Programming Is An Example of the Declarative Paradigm</h3>
+<h3 id="org89f0bc3">Functional Programming Is An Example of the Declarative Paradigm</h3>
 <ul>
 <li class="fragment appear">It is based on the use of expressions or declarations</li>
 <li class="fragment appear">contrasts with the imperative paradigm (the use of statements to change program state)</li>
@@ -268,7 +268,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org9bd8372">Example: imperative</h3>
+<h3 id="org618541c">Example: imperative</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">Python</span>
@@ -286,7 +286,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org3f34b17">Example: functional</h3>
+<h3 id="org8804bb6">Example: functional</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim><span style="color: #73d216;"># </span><span style="color: #73d216;">Python</span>
@@ -303,7 +303,7 @@ These features give the following benefits:
 
 </section>
 <section id="slide-sec-">
-<h3 id="org6ecebaa">Example: expressions vs. statements</h3>
+<h3 id="org38c4338">Example: expressions vs. statements</h3>
 <p>
 In imperative languages, <code>if</code> / <code>else</code> is a statement:
 </p>
@@ -332,7 +332,7 @@ In functional languages, it's an expression.
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgd89a1d2">Example: Factoring</h3>
+<h3 id="org42c2a92">Example: Factoring</h3>
 <div class="org-src-container">
 
 <pre  class="src src-python"><code trim>// Python
@@ -369,12 +369,12 @@ write(<span style="color: #e9b96e;">"some-file.txt"</span>, in1 + <span style="c
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="orgf5c3fd1">What is it Good For?</h2>
-<div class="outline-text-2" id="text-orgf5c3fd1">
+<h2 id="orgf20f143">What is it Good For?</h2>
+<div class="outline-text-2" id="text-orgf20f143">
 </div>
 </section>
 <section id="slide-sec-">
-<h3 id="org3596c9f">It can give us:</h3>
+<h3 id="org8c4c041">It can give us:</h3>
 <ul>
 <li class="fragment appear"><a href="https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/">Hack-proof code</a>?</li>
 <li class="fragment appear">Property-based testing</li>
@@ -385,7 +385,7 @@ write(<span style="color: #e9b96e;">"some-file.txt"</span>, in1 + <span style="c
 
 </section>
 <section id="slide-sec-">
-<h3 id="org9da694c">Examples of Optimizations that GHC Can Do</h3>
+<h3 id="org34f92d2">Examples of Optimizations that GHC Can Do</h3>
 <ul>
 <li>Common Sub-Expression Elimination</li>
 
@@ -393,7 +393,7 @@ write(<span style="color: #e9b96e;">"some-file.txt"</span>, in1 + <span style="c
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgec18530"></h3>
+<h3 id="org445f8e7"></h3>
 <p>
 Whole classes of bugs become <i>impossible</i>.
 <img src="./img/dotnet-try-round-bug-scaled.png" alt="dotnet-try-round-bug-scaled.png" />
@@ -403,7 +403,7 @@ Whole classes of bugs become <i>impossible</i>.
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org39b6c95">Uses in Industry</h2>
+<h2 id="orgf5d209f">Uses in Industry</h2>
 <ul>
 <li class="fragment appear"><a href="https://code.fb.com/security/fighting-spam-with-haskell/">Facebook's Spam Filters Written in Haskell</a></li>
 <li class="fragment appear"><a href="https://www.fpcomplete.com/articles/whatsapp-erlang-haskell">WhatsApp Written in Erlang</a></li>
@@ -415,7 +415,7 @@ Whole classes of bugs become <i>impossible</i>.
 
 </section>
 <section id="slide-sec-">
-<h3 id="orgccd39cc">Why Github Uses Haskell for Semantic</h3>
+<h3 id="orgefb7b40">Why Github Uses Haskell for Semantic</h3>
 <blockquote nil>
 <p>
 "it's worth mentioning that Semantic, as a rule, does not encounter runtime crashes"
@@ -424,7 +424,7 @@ Whole classes of bugs become <i>impossible</i>.
 
 </section>
 <section id="slide-sec-">
-<h3 id="org8c303b6">Why Github Uses Haskell for Semantic</h3>
+<h3 id="org3e5e43a">Why Github Uses Haskell for Semantic</h3>
 <blockquote nil>
 <p>
 "null pointer exceptions, missing-method exceptions, and invalid casts are entirely obviated, as Haskell makes it nigh-impossible to build programs that contain such bugs."
@@ -433,7 +433,7 @@ Whole classes of bugs become <i>impossible</i>.
 
 </section>
 <section id="slide-sec-">
-<h3 id="org998a534">Why Github Uses Haskell for Semantic</h3>
+<h3 id="org949696b">Why Github Uses Haskell for Semantic</h3>
 <blockquote nil>
 <p>
 "the fact that the Semantic Code team spends the majority of its time working on features rather than debugging production crashes is truly remarkable—and this can largely be attributed to our choice of language."
@@ -444,7 +444,7 @@ Whole classes of bugs become <i>impossible</i>.
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org4b4789c">Start Using It Today!</h2>
+<h2 id="orgb7ed03c">Start Using It Today!</h2>
 <ul>
 <li class="fragment appear">Use higher-order functions instead of <code>for</code> loops</li>
 <li class="fragment appear">Make data structures immutable</li>
@@ -455,7 +455,7 @@ Whole classes of bugs become <i>impossible</i>.
 </section>
 <section>
 <section id="slide-sec-">
-<h2 id="org6ef67e2">Conclusion</h2>
+<h2 id="org4a25313">Conclusion</h2>
 </section>
 </section>
 </div>

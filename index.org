@@ -45,20 +45,6 @@ Are we talking about /pure/ or /impure/ FP?
 #+REVEAL_HTML: </div>
 
 ** Pure FP
-#+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
-#+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
-[[file:./img/runar-bjarnason-twitter.png]]
-[[./img/fp-in-scala-cover.jpg]]
-#+REVEAL_HTML: </div>
-#+REVEAL_HTML: <div class="column" style="float:right; width: 75%">
-#+BEGIN_QUOTE
-"Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
-
--- Rúnar Bjarnason
-#+END_QUOTE
-#+REVEAL_HTML: </div>
-
-** Pure FP
 #+REVEAL_HTML: <div class="column" style="float:left; width: 80%">
 #+BEGIN_QUOTE
 "purely functional programming usually designates a programming paradigm [...] that treats all computation as the evaluation of mathematical functions. Purely functional programming may also be defined by forbidding changing-state and mutable data."
@@ -70,6 +56,20 @@ Are we talking about /pure/ or /impure/ FP?
 #+REVEAL_HTML: <div class="column" style="float:right; width: 20%">
 #+ATTR_HTML: :alt Wikipedia Logo :title Wikipedia Logo
 [[file:./img/220px-Wikipedia-logo-v2.svg.png]]
+#+REVEAL_HTML: </div>
+
+** Pure FP
+#+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
+#+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
+[[file:./img/runar-bjarnason-twitter.png]]
+[[./img/fp-in-scala-cover.jpg]]
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 75%">
+#+BEGIN_QUOTE
+"Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
+
+-- Rúnar Bjarnason
+#+END_QUOTE
 #+REVEAL_HTML: </div>
 
 ** First-class Functions
