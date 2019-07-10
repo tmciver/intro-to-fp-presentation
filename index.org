@@ -15,7 +15,6 @@ It's a bit hard to define, but let's give it a go.
 ** 
 #+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
 [[./img/hutton-twitter.jpg]]
-#+ATTR_REVEAL: :frag (appear)
 [[./img/programming-in-haskell.jpg]]
 #+REVEAL_HTML: </div>
 #+REVEAL_HTML: <div class="column" style="float:right; width: 75%">
@@ -29,27 +28,48 @@ There must be more to the story than that . . .
 #+REVEAL_HTML: </div>
 
 ** 
+Are we talking about /pure/ or /impure/ FP?
+
+** Impure FP
+#+REVEAL_HTML: <div class="column" style="float:left; width: 75%">
 #+BEGIN_QUOTE
-# #+ATTR_HTML: :alt Wikipedia Logo :title Wikipedia Logo
-# [[file:./img/220px-Wikipedia-logo-v2.svg.png]]
 "Functional programming is a programming paradigm [...] that treats computation as the evaluation of mathematical functions and avoids changing-state and mutable data."
 
 -- Wikipedia
 #+END_QUOTE
+#+REVEAL_HTML: </div>
 
-** 
-#+REVEAL_HTML: <div class="column" style="float:left; width: 70%">
+#+REVEAL_HTML: <div class="column" style="float:right; width: 25%">
+#+ATTR_HTML: :alt Wikipedia Logo :title Wikipedia Logo
+[[file:./img/220px-Wikipedia-logo-v2.svg.png]]
+#+REVEAL_HTML: </div>
+
+** Pure FP
+#+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
+#+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
+[[file:./img/runar-bjarnason-twitter.png]]
+[[./img/fp-in-scala-cover.jpg]]
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 75%">
 #+BEGIN_QUOTE
 "Programming where your entire program is a single referentially transparent expression composed of other referentially transparent expressions."
 
 -- Rúnar Bjarnason
 #+END_QUOTE
 #+REVEAL_HTML: </div>
-#+REVEAL_HTML: <div class="column" style="float:right; width: 30%">
-#+ATTR_HTML: :alt Runar Bjarnason's Twitter Photo :title Runar Bjarnason's Twitter Photo
-[[file:./img/runar-bjarnason-twitter.png]]
-#+ATTR_REVEAL: :frag (appear)
-[[./img/fp-in-scala-cover.jpg]]
+
+** Pure FP
+#+REVEAL_HTML: <div class="column" style="float:left; width: 80%">
+#+BEGIN_QUOTE
+"purely functional programming usually designates a programming paradigm [...] that treats all computation as the evaluation of mathematical functions. Purely functional programming may also be defined by forbidding changing-state and mutable data."
+
+-- Wikipedia
+#+END_QUOTE
+#+REVEAL_HTML: </div>
+
+#+REVEAL_HTML: <div class="column" style="float:right; width: 20%">
+#+ATTR_HTML: :alt Wikipedia Logo :title Wikipedia Logo
+[[file:./img/220px-Wikipedia-logo-v2.svg.png]]
 #+REVEAL_HTML: </div>
 
 ** First-class Functions
@@ -106,13 +126,6 @@ These features give the following benefits:
 - Memoization potential
 - Independent expressions can be run in parallel, i.e., they are automatically thread safe.
 - The compiler is free to reorder or combine expressions.
-
-** Using Pure Functions Leads to Purely Functional Programming
-#+begin_quote
-"purely functional programming usually designates a programming paradigm [...] that treats all computation as the evaluation of mathematical functions. Purely functional programming may also be defined by forbidding changing-state and mutable data."
-
--- Wikipedia
-#+end_quote
 
 * Versus Imperative Programming
 
