@@ -12,14 +12,20 @@
 It's a bit hard to define, but let's give it a go.
 
 ** 
+#+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
+[[./img/hutton-twitter.jpg]]
+#+ATTR_REVEAL: :frag (appear)
+[[./img/programming-in-haskell.jpg]]
+#+REVEAL_HTML: </div>
+#+REVEAL_HTML: <div class="column" style="float:right; width: 75%">
 #+begin_quote
 "functional programming can be viewed as a /style/ of programming in which the basic method of computation is the application of functions to arguments."
 
--- Graham Hutton, author of "Programming in Haskell"
+-- Graham Hutton
 #+end_quote
-
 #+ATTR_REVEAL: :frag (appear)
 There must be more to the story than that . . .
+#+REVEAL_HTML: </div>
 
 ** 
 #+BEGIN_QUOTE
