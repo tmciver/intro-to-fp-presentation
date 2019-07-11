@@ -88,6 +88,7 @@ This is actually a consequence of using pure functions.
 - Has no side effects
 
 ** OK Fine, What's a Side Effect?
+#+ATTR_REVEAL: :frag (appear)
 It's when a function has an observable effect /besides/ returning a value.
 #+ATTR_REVEAL: :frag (appear)
 Examples include
@@ -102,23 +103,11 @@ In the presence of side effects, a program's behaviour may depend on history; th
 #+ATTR_REVEAL: :frag (appear)
 Understanding and debugging a function with side effects requires knowledge about the context and its possible histories.
 
-** Some Other FP Characteristics
+** FP (Impure) Can Be Done In Any Language
 #+ATTR_REVEAL: :frag (appear)
-- Functions as first-class citizens
-- Higher-Order Functions
-- Pure Functions
-
-** Terms We've Seen So Far
+But that language should really have support for /first class/ functions.
 #+ATTR_REVEAL: :frag (appear)
-- First-Class
-- Higher-Order
-- Pure
-- Referential Transparency
-
-** First-class Functions
-#+ATTR_REVEAL: :frag (appear)
-- Functional programming languages are often said to be those where functions are "first class".
-- This means that functions are values like any other and can therefore be passed as arguments to other functions or returned from functions.
+This means that functions are values like any other and can therefore be passed as arguments to other functions or returned from functions.
 
 ** First-Class Function Examples: JavaScript
 #+HEADER: :exports both
@@ -156,6 +145,17 @@ $inc = function($i) {
 map($inc, [1, 2, 3]);
 // [2, 3, 4]
 #+end_src
+
+** FP Is Also Often Characterized By Use Of Recursion
+#+HEADER: :exports both
+#+begin_src python :results pp
+# Python
+def factorial(n):
+  return 1 if (n == 0) else n * factorial(n - 1)
+
+return factorial(5)
+#+end_src
+#+RESULTS:
 
 * Versus Imperative Programming
 
