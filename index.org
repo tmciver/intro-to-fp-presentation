@@ -30,7 +30,7 @@ There must be more to the story than that . . .
 #+REVEAL_HTML: </div>
 
 ** 
-Are we talking about /pure/ or /impure/ FP?
+A more involved answer depends on whether we're talking about /pure/ or /impure/ FP.
 
 ** Impure FP
 #+REVEAL_HTML: <div class="column" style="float:left; width: 75%">
@@ -73,6 +73,14 @@ Are we talking about /pure/ or /impure/ FP?
 -- Rúnar Bjarnason
 #+END_QUOTE
 #+REVEAL_HTML: </div>
+
+** Referential What-Now?
+[[./img/confused-mal.gif]]
+#+ATTR_REVEAL: :frag (appear)
+An expression is called referentially transparent if it can be replaced with its corresponding value without changing the program's behavior.
+
+#+ATTR_REVEAL: :frag (appear)
+This is actually a consequence of using pure functions.
 
 ** Some Other FP Characteristics
 #+ATTR_REVEAL: :frag (appear)
@@ -133,11 +141,6 @@ map($inc, [1, 2, 3]);
 #+ATTR_REVEAL: :frag (appear)
 - Give the same output for a given set of inputs
 - Have no side effects (modification of some state outside of the function)
-
-** Referential Transparency
-An expression is called referentially transparent if it can be replaced with its corresponding value without changing the program's behavior.
-#+ATTR_REVEAL: :frag (appear)
-This is actually a consequence of using pure functions.
 
 * Versus Imperative Programming
 
