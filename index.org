@@ -82,6 +82,26 @@ An expression is called referentially transparent if it can be replaced with its
 #+ATTR_REVEAL: :frag (appear)
 This is actually a consequence of using pure functions.
 
+** So What's a Pure Function?
+#+ATTR_REVEAL: :frag (appear)
+- Gives the same output for a given set of inputs
+- Has no side effects
+
+** OK Fine, What's a Side Effect?
+It's when a function has an observable effect /besides/ returning a value.
+#+ATTR_REVEAL: :frag (appear)
+Examples include
+#+ATTR_REVEAL: :frag (appear)
+- Any I/O (reads/writes)
+- Modifying a variable
+
+** FP Proponents Say Side Effects Bad!
+[[./img/thumbs-down.jpeg]]
+#+ATTR_REVEAL: :frag (appear)
+In the presence of side effects, a program's behaviour may depend on history; that is, the order of evaluation matters.
+#+ATTR_REVEAL: :frag (appear)
+Understanding and debugging a function with side effects requires knowledge about the context and its possible histories.
+
 ** Some Other FP Characteristics
 #+ATTR_REVEAL: :frag (appear)
 - Functions as first-class citizens
@@ -136,11 +156,6 @@ $inc = function($i) {
 map($inc, [1, 2, 3]);
 // [2, 3, 4]
 #+end_src
-
-** Pure Functions
-#+ATTR_REVEAL: :frag (appear)
-- Give the same output for a given set of inputs
-- Have no side effects (modification of some state outside of the function)
 
 * Versus Imperative Programming
 
