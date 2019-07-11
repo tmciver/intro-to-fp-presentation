@@ -279,4 +279,8 @@ Whole classes of bugs become /impossible/.
 - Use higher-order functions instead of ~for~ loops
 - Make data structures immutable
 
-* Conclusion
+* Questions
+:PROPERTIES:
+:reveal_background: ./img/questions.jpg
+:reveal_background_trans: slide
+:END:
