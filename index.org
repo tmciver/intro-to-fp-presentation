@@ -10,7 +10,9 @@
 - Based on the lambda calculus (by Alfonzo Church) which predates computers!
 
 ** 
-It's a bit hard to define, but let's give it a go.
+It depends on who you ask!
+#+ATTR_REVEAL: :frag (appear)
+[[./img/slightly-frowning-face.png]]
 
 ** 
 #+REVEAL_HTML: <div class="column" style="float:left; width: 25%">
@@ -72,6 +74,19 @@ Are we talking about /pure/ or /impure/ FP?
 #+END_QUOTE
 #+REVEAL_HTML: </div>
 
+** Some Other FP Characteristics
+#+ATTR_REVEAL: :frag (appear)
+- Functions as first-class citizens
+- Higher-Order Functions
+- Pure Functions
+
+** Terms We've Seen So Far
+#+ATTR_REVEAL: :frag (appear)
+- First-Class
+- Higher-Order
+- Pure
+- Referential Transparency
+
 ** First-class Functions
 #+ATTR_REVEAL: :frag (appear)
 - Functional programming languages are often said to be those where functions are "first class".
@@ -117,15 +132,12 @@ map($inc, [1, 2, 3]);
 ** Pure Functions
 #+ATTR_REVEAL: :frag (appear)
 - Give the same output for a given set of inputs
-- Have no side effects
+- Have no side effects (modification of some state outside of the function)
 
-** Pure Functions
-These features give the following benefits:
+** Referential Transparency
+An expression is called referentially transparent if it can be replaced with its corresponding value without changing the program's behavior.
 #+ATTR_REVEAL: :frag (appear)
-- Referential Transparency: a function call can be replaced by its value.
-- Memoization potential
-- Independent expressions can be run in parallel, i.e., they are automatically thread safe.
-- The compiler is free to reorder or combine expressions.
+This is actually a consequence of using pure functions.
 
 * Versus Imperative Programming
 
@@ -212,9 +224,10 @@ doIt = do
 ** It can give us:
 #+ATTR_REVEAL: :frag (appear)
 - [[https://www.wired.com/2016/09/computer-scientists-close-perfect-hack-proof-code/][Hack-proof code]]?
-- Property-based testing
+- Property-based testing (Quickcheck)
 - Computer-assisted optimizations
 - Computer-assisted parallelization
+- Memoization potential
 
 ** Examples of Optimizations that GHC Can Do
 - Common Sub-Expression Elimination
